@@ -7,6 +7,22 @@ const Contacts = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+   
+  const handleSubmit = () => {
+
+    const userInput = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    console.log("User Input:", userInput);
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   
   return (
     <div className="flex flex-col items-center w-10/12 m-auto  h-3/4 xs:my-10 ">
@@ -31,7 +47,7 @@ const Contacts = () => {
           />
         </div>
         <div className="flex flex-col  xs:w-full md:w-5/12 md:items-end ">
-          <label className="flex flex-col items-start w-full mb-2 font-bold text-sm" htmlFor="id">
+          <label className="flex flex-col items-start w-full mb-2 font-bold text-sm" htmlFor="message">
             Your message
             <textarea
               className="rounded-md border w-full border-customBlue bg-customGray font-normal  mt-1 p-1"
@@ -44,7 +60,7 @@ const Contacts = () => {
             ></textarea>
           </label>
 
-          <Button text="Submit" width="w-full" />
+          <Button text="Submit" width="w-full" onClick={handleSubmit} />
         </div>
       </div>
     </div>

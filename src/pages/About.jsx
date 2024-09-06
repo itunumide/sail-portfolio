@@ -22,18 +22,16 @@ const About = () => {
       <div>
         <h3 className="text-xl font-bold">My Tech Stack</h3>
         <p>Technologies I have been working with recently</p>
-      <div className="flex items-center justify-between flex-wrap w-full m-auto ">
-      <Techstack icon="html"  />
-        <Techstack icon="css" />
-        <Techstack icon="javascript" />
-         <Techstack icon="react" />
-        <Techstack icon="github" />
-        <Techstack icon="vercel" />
-      
-       
-        <Techstack icon="tailwind" />
-        <Techstack icon="vscode" />
-      </div>
+        <div className="flex items-center justify-between flex-wrap w-full m-auto ">
+          <Techstack icon="html" />
+          <Techstack icon="css" />
+          <Techstack icon="javascript" />
+          <Techstack icon="react" />
+          <Techstack icon="github" />
+          <Techstack icon="vercel" />
+          <Techstack icon="tailwind" />
+          <Techstack icon="vscode" />
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import vercelIcon from "../../assets/icons/vercel.svg"
 import vscodeIcon from "../../assets/icons/vscode.svg"
 
 
-const Icon = ({ name }) => {
+const Icon = ({ name, width="w-8" }) => {
   const icons = {
     css: cssIcon,
     github: githubIcon,
@@ -20,7 +20,7 @@ const Icon = ({ name }) => {
     vscode: vscodeIcon,
   };
 
-  return <img src={icons[name]} alt={`${name} icon`} className="xs:w-8 m-auto sm:w-10 cursor-pointer" />;
+  return <img src={icons[name]} alt={`${name} icon`} className={` ${width}  m-auto cursor-pointer `}/>;
 };
 
 export default Icon;

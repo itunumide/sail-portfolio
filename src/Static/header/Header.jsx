@@ -1,12 +1,17 @@
 import Menu from "../../component/Menu";
 import Button from "../../component/reuseable/Button";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleContactsClick = () => {
+    navigate('/contacts');
+  };
   return (
     <div className="flex justify-between items-center h-16 p-3 w-full m-auto font-bold">
-      <h3>RAJI ITUNU IDOWU</h3>
+      <h3>ITUNUMIDE</h3>
       <div className=" md:hidden xs:block">
         <Menu />
       </div>
@@ -26,7 +31,7 @@ const Header = () => {
             Projects
           </nav>
         </Link>
-        <Link to="/contacts"><Button text="Contacts" /></Link>
+        <Button text="Contacts" onClick={handleContactsClick}/>
       </div>
     </div>
   );
