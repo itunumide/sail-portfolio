@@ -1,5 +1,5 @@
 import Button from "../component/reuseable/Button";
-import demo from "../assets/itunu.png";
+// import demo from "../assets/itunu.png";
 import { useNavigate } from 'react-router-dom';
 
 
