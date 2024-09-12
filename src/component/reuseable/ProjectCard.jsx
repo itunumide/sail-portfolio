@@ -1,4 +1,4 @@
-import ProjectImg from "./projectImg";
+import ProjectImg from "./ProjectImg";
 import Techstack from "./Techstack";
 
 
