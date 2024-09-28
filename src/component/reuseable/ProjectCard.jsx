@@ -1,17 +1,18 @@
-import ProjectImg from "./ProjectImg";
+
+import ProjectImg from "./ProjectImage";
 import Techstack from "./Techstack";
 
 
 const ProjectCard = ({ projectText, techStack, href,git,image, title }) => {
 
   return (
-    <div className="mb-16  my-3 xs:w-full md:w-5/12">
+    <div className="mb-16 m-auto  my-3 xs:w-[90%] md:w-5/12 border-none rounded-md shadow-[0px_0px_15px] shadow-customBlue">
       <div>
       <a href={href} target="_blank" rel="noopener noreferrer">
           <ProjectImg img={image}/>
         </a>
       </div>
-      <div className=" flex flex-col text-left ">
+      <div className=" flex flex-col text-left p-4 ">
         <h3 className="font-bold text-2xl">
         {title}
           <div className="relative top-0 left-0 right-0 border-t border-customBlue w-full my-2"></div>
