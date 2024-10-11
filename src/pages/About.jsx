@@ -2,7 +2,7 @@ import Techstack from "../component/reuseable/Techstack";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center xs:m-3 xs:mb-8 sm:m-5 ">
+    <div className="flex flex-col items-center m-3 mb-8 sm:m-5 ">
       <div className="mb-6">
         <h3 className="font-medium text-3xl m-6">
           About

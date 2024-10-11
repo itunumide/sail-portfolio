@@ -18,6 +18,23 @@ body {
   background-color: rgb(219, 219, 219);
   
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-animation:hover {
+  animation: rotate 0.5s ease-in-out forwards;
+}
+
 
 
 

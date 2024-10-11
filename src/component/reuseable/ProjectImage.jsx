@@ -11,7 +11,7 @@ const ProjectImg = ({img}) => {
        
       };
     
-      return <img src={images[img]} alt={`${img} image`} className="rounded-lg m-auto mb-6 " />;
+      return <img src={images[img]} alt={`${img} image`} className="rounded-t-2xl m-auto w-full object-center h-72 " />;
     
 }
 

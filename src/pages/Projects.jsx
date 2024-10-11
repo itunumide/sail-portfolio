@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'Social Media Dashboard',
       image: 'socialimg',
       techStack: ['html', 'javascript', 'react', 'tailwind'],
-      projectText: 'The Social Media Dashboard is a responsive web application designed to provide users with a comprehensive overview of their social media accounts. It allows users to track key metrics, like followers, likes, and interactions across different platforms, in a clean and visually appealing interface. The goal of this project was to create a dashboard that consolidates social media analytics into one place, providing users with easy access to their data at a glance.',
+      projectText: 'The Social Media Dashboard provides users with a comprehensive overview of key metrics like followers and interactions, consolidating analytics from multiple platforms into one easy-to-use, visually appealing, and responsive interface.',
       git:'https://github.com/ITUNUMIDE/Social-Media-Dashboard',
       vercel:'https://social-media-dashboard-seven-silk.vercel.app',
     },
@@ -32,10 +32,10 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center xs:mt-2 md:mt-4 ">
+    <div className="flex flex-col items-center mt-2 md:mt-4 m-auto ">
       <h3 className=" relative font-medium text-3xl m-6 ">Projects<div className="relative top-2 left-0 right-0 border-t border-customBlue w-40 m-auto"></div>
       </h3>
-      <div className="flex justify-around xs:w-full  xs:flex-col md:flex-wrap md:flex-row">
+      <div className="flex justify-around flex-nowrap flex-col sm:flex-row w-[98%] m-auto md:mt-4 sm:flex-wrap sm:w-[90%]">
       {projects.map((project, index) => (
           <ProjectCard 
             key={index}

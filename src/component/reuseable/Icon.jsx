@@ -8,7 +8,7 @@ import vercelIcon from "../../assets/icons/vercel.svg"
 import vscodeIcon from "../../assets/icons/vscode.svg"
 
 
-const Icon = ({ name, width="w-8" }) => {
+const Icon = ({ name, width="w-8" ,iconName }) => {
   const icons = {
     css: cssIcon,
     github: githubIcon,
@@ -20,7 +20,12 @@ const Icon = ({ name, width="w-8" }) => {
     vscode: vscodeIcon,
   };
 
-  return <img src={icons[name]} alt={`${name} icon`} className={` ${width}  m-auto cursor-pointer `}/>;
+  return <div className="relative group items-center">
+    <img src={icons[name]} alt={`${name} icon`} className={` ${width} rotate-animation m-auto cursor-pointer hover:w-full  `}/>
+    <p class="absolute inset-x-0 bottom-[1] text-center text-customBlue bg-opacity-50 p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    {name}
+  </p>
+  </div>;
 };
 
 export default Icon;
