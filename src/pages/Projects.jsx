@@ -10,7 +10,7 @@ const Projects = () => {
       image: 'socialimg',
       techStack: ['html', 'javascript', 'react', 'tailwind'],
       projectText: 'The Social Media Dashboard provides users with a comprehensive overview of key metrics like followers and interactions, consolidating analytics from multiple platforms into one easy-to-use, visually appealing, and responsive interface.',
-      git:'https://github.com/ITUNUMIDE/Social-Media-Dashboard',
+      git:'https://github.com/itunumide/social-media-dashboard',
       vercel:'https://social-media-dashboard-seven-silk.vercel.app',
     },
     {
@@ -19,16 +19,16 @@ const Projects = () => {
       image: 'formimg',
       techStack: ['html', 'javascript', 'react', 'css'],
       projectText: 'This Form Page is a user-friendly contact form built using React, which allows users to input their name, email, and address. It features a simple yet responsive design implemented using styled-components for CSS-in-JS styling.',
-      git:'https://github.com/ITUNUMIDE/Form-Page',
+      git:'https://github.com/itunumide/form-page',
 
     },
      {
-      href: 'https://hero-page-raji-itunu-idowus-projects.vercel.app',
-      title: 'Hero Page',
-      image: 'heroimg',
-      techStack: ['html', 'css'],
-      projectText: 'This Hero Page is a visually appealing and user-friendly website using HTML and CSS to highlight the key features of the Snap remote work platform. Utilized responsive design principles to ensure optimal viewing across different devices.',
-      git:'https://github.com/ITUNUMIDE/Hero-page',
+      href: 'https://itunu-i-raji.vercel.app',
+      title: 'Personal Portfolio',
+      image: 'portfolioimg',
+      techStack: ['html', 'css', 'javascript', 'tailwind'],
+      projectText: 'A personal portfolio website showcasing my frontend development skills, including projects, technologies I work with, and contact information. It highlights my expertise in React, JavaScript, HTML, CSS, and other key technologies.',
+      git:'https://github.com/itunumide/portfolio-website',
     },
   ];
   return (

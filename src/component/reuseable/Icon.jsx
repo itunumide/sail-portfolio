@@ -22,9 +22,7 @@ const Icon = ({ name, width="w-8" ,iconName }) => {
 
   return <div className="relative group items-center">
     <img src={icons[name]} alt={`${name} icon`} className={` ${width} rotate-animation m-auto cursor-pointer hover:w-full  `}/>
-    <p class="absolute inset-x-0 bottom-[1] text-center text-customBlue bg-opacity-50 p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    {name}
-  </p>
+   
   </div>;
 };
 

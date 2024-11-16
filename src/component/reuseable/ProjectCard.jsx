@@ -30,7 +30,7 @@ const ProjectCard = ({ projectText, techStack, href, git, image, title }) => {
           </a>
           <a href={href} className="flex items-center">
           
-            <Techstack icon="vercel" width="w-4" widthb="w-6" />
+            <Techstack icon={"vercel"} width={"w-4"} widthb={"w-6"} />
             <span className="font-bold mx-2 hover:underline">Live preview</span>
           </a>
         </div>

@@ -1,6 +1,17 @@
 import Techstack from "../component/reuseable/Techstack";
 
 const About = () => {
+  const icons = [
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "github",
+    "vercel",
+    "tailwind",
+    "vscode",
+  ];
+
   return (
     <div className="flex flex-col items-center m-3 mb-8 sm:m-5 ">
       <div className="mb-6">
@@ -21,16 +32,16 @@ const About = () => {
       </div>
       <div>
         <h3 className="text-xl font-bold">My Tech Stack</h3>
-        <p>Technologies I have been working with recently</p>
-        <div className="flex items-center justify-between flex-wrap w-full m-auto ">
-          <Techstack icon="html" />
-          <Techstack icon="css" />
-          <Techstack icon="javascript" />
-          <Techstack icon="react" />
-          <Techstack icon="github" />
-          <Techstack icon="vercel" />
-          <Techstack icon="tailwind" />
-          <Techstack icon="vscode" />
+        <p className="text-center">
+          Technologies I have been working with recently
+        </p>
+
+        <div className="flex justify-between flex-wrap w-[300px] mt-6 mx-auto">
+          {icons.map((icon, index) => (
+            <div key={index} className="m-3">
+              <Techstack icon={icon} width="w-full" widthb="w-[3rem]" />
+            </div>
+          ))}
         </div>
       </div>
     </div>
